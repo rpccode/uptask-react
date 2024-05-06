@@ -1,5 +1,4 @@
 import ProjectForm from '@/components/projects/ProjectForm'
-import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 import { ProjectFormData } from 'types'
@@ -13,7 +12,7 @@ const CreateProjectView = () => {
     const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: initialValues })
 
     const handleFormSumite = (data: ProjectFormData) => {
-
+        console.log(data)
     }
     return (
         <>
